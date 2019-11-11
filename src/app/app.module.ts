@@ -85,8 +85,8 @@ export class CustomHammerConfig extends HammerGestureConfig {
     JwtModule.forRoot({
       config: {
         tokenGetter,
-        whitelistedDomains: ['localhost:8080'],
-        blacklistedRoutes: ['localhost:8080/api/auth']
+        whitelistedDomains: ['localhost:8080', 'dateapp-rest-api.herokuapp.com'],
+        blacklistedRoutes: ['localhost:8080/api/auth', 'dateapp-rest-api.herokuapp.com/api/auth']
       }
     })
   ],
